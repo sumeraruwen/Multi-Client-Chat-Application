@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="823.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.LiveChat.controller.Client02FormController">
+   <children>
+      <TextArea fx:id="textArea" layoutX="2.0" layoutY="102.0" prefHeight="662.0" prefWidth="439.0" />
+      <TextField fx:id="textMessage" layoutX="5.0" layoutY="769.0" prefHeight="49.0" prefWidth="378.0" />
+      <Button layoutX="388.0" layoutY="769.0" mnemonicParsing="false" onAction="#sendOnAction" prefHeight="49.0" prefWidth="47.0" style="-fx-background-color: #488d48;" text="." />
+      <AnchorPane prefHeight="102.0" prefWidth="441.0" style="-fx-background-color: #096811;">
+         <children>
+            <Circle fill="WHITE" layoutX="78.0" layoutY="51.0" radius="43.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="144.0" layoutY="25.0" text="Play Tech" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="144.0" layoutY="59.0" text="Supipi,Sumera,Viki..." textFill="WHITE" />
+            <FontAwesomeIconView fill="WHITE" glyphName="PHONE" layoutX="398.0" layoutY="59.0" size="25" />
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView glyphName="CAMERA" layoutX="351.0" layoutY="802.0" onMouseClicked="#imageSendOnAction" size="20" text="" />
+      <FontAwesomeIconView glyphName="FILE" layoutX="328.0" layoutY="800.0" onMouseClicked="#emojiOnAction" onMouseDragged="#emojiExit" size="15" />
+      <AnchorPane fx:id="emojiBox" layoutX="241.0" layoutY="569.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <FontAwesomeIconView glyphName="PHONE" layoutX="52.0" layoutY="161.0" onMouseClicked="#emoji1" text="" />
+            <FontAwesomeIconView glyphName="CAR" layoutX="79.0" layoutY="159.0" onMouseClicked="#emoji2" />
+            <FontAwesomeIconView glyphName="CAMERA" layoutX="113.0" layoutY="160.0" />
+            <FontAwesomeIconView glyphName="FILE" layoutX="143.0" layoutY="160.0" />
+            <FontAwesomeIconView glyphName="CIRCLE" layoutX="171.0" layoutY="160.0" />
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fill="WHITE" glyphName="SEND" layoutX="402.0" layoutY="801.0" size="20" />
+   </children>
+</AnchorPane>
